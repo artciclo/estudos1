@@ -1,0 +1,111 @@
+/* iniciando meu primeiro arquivo CSS */
+
+body {
+    color: #444;
+    background: rgb(255,245,249);
+    background: linear-gradient(90deg, rgba(255,245,249,1) 0%, rgba(170,203,244,1) 100%);
+}
+
+.container {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+
+}
+
+.destaque {
+    color: red;
+}
+
+.profile {
+    margin-top: 100px;
+}
+
+.profile__header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+
+}
+
+.profile__header h2 {
+    font-weight: 400;
+}
+.profile__header h1,  .profile__header h2 {
+    margin: 0;
+
+}
+
+.profile__header, .profile__about {
+    text-align: center;
+}
+
+div.profile__about {
+    display: grid;
+    grid-row: 50%;
+    justify-content: center;
+    width: 650px;
+    
+    
+}
+
+.profile__about div {
+    margin: auto;
+   
+    
+}
+.profile__about p {
+    width: 650px;
+    text-align: justify;
+}
+
+.profile__about .destaque {
+    color: white;
+}
+
+a.destaque {
+    color: blue;
+}
+
+.links ul {
+    list-style: none;
+    marks: none;
+
+}
+
+.links a {
+    display: flex;
+    height: 56px;
+    border: solid #444 1px;
+    border-radius: 35px;
+    text-decoration: none;
+    padding: 0 24px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+
+}
+
+.links a:hover {
+    border: solid #fff 1px;
+    color: #fff;
+    background-color: aqua;
+
+}
+
+.links__itens {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 720px;)
+{
+    .profile__about {
+        font-size: 20px;
+    }
+}
