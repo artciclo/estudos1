@@ -1,55 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <meta name="description" content="perfil profissional de Arthur Lima">
+    <title>Arthur Lima - Project Manager</title>
 
-    <!--Meta tags para redes sociais-->
-    <meta property="og:title" content="Meu Perfil">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="Project Manager">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Perfil profissional de Arthur Lima, Project Manager com ampla experiência em gestão de projetos de TI.">
+    <meta name="keywords" content="Project Manager, Gestão de Projetos, Tecnologia da Informação, Arthur Lima">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Arthur Lima - Project Manager">
+    <meta property="og:description" content="Project Manager com experiência internacional e visão estratégica.">
     <meta property="og:image" content="https://artciclo.github.io/estudos1/images/avatar.jpeg">
-    <meta property="og:image:alt" content="foto de perfil do Arthur Lima">
-    <meta property="og:site_name" content="Meu Perfil">
+    <meta property="og:image:alt" content="Foto de perfil do Arthur Lima">
     <meta property="og:url" content="https://artciclo.github.io/estudos1/">
-    
-</head>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
 
 <body>
     <div class="container">
-        <!--seção superior-->
+        <!-- Troca de Idioma -->
+        <div class="language-switch">
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('pt')">Português</button>
+        </div>
+
+        <!-- Perfil -->
         <div class="profile">
             <div class="profile__header">
-                <img src="images/avatar.jpeg" width="300px" alt="foto de Arthur Lima">
+                <img src="images/avatar.jpeg" alt="Arthur Lima" class="profile__image">
                 <h1>Arthur Lima</h1>
                 <h2>Project Manager</h2>
             </div>
 
+            <!-- Sobre Mim -->
             <div class="profile__about">
-                <p>Profissional com extensa experiência em gestão de projetos, atualmente atuando como Project Manager em desenvolvimento de software. Possui mestrado em Engenharia Civil e Ambiental e uma trajetória consolidada no Centro de Tecnologia da Informação Renato Archer (CTI), com foco em planejamento estratégico, elaboração de cronogramas, análise de dados e normatização.                  Experiência internacional na Austrália, proporcionando uma visão global das melhores práticas e tecnologias aplicadas em diversos contextos. Essa perspectiva global é essencial para enfrentar os desafios em Tecnologia da Informação e gestão de projetos.Atualmente, atua na área de Tecnologia da Informação, utilizando expertise multidisciplinar para implementar soluções inovadoras e eficientes. A combinação de habilidades de gestão, conhecimento técnico e visão estratégica garante a entrega de projetos que agregam valor em ambientes dinâmicos e desafiadores.</p>
-        </div>
+                <p id="about-text">
+                    Profissional versátil com ampla experiência em gestão de projetos, atualmente atuando como Project Manager em desenvolvimento de software. Possui mestrado em Engenharia Civil e Ambiental, pós graduação em gerenciamento de projetos e especialização em gerenciamento de produtos. Experiência internacional na Austrália, aplicando melhores práticas e tecnologias.
+                </p>
+            </div>
 
-        <!--seção de links-->
-        <div class="links">
-            <ul>
-            <li> <a href="https://www.linkedin.com/in/artciclo/"><span class="emoji">&#128188;</span> <span class="links__item"> Linkedin </span></a></li>
-            
-            <!--<li> <a href=""><span class="emoji">&#128247;</span> <span class="links__item"> Instagram </span></a></li>
-            <li> <a href=""><span class="emoji">&#128250;</span> <span class="links__item"> Youtube </span></a></li>
-            -->
-            
-            <li> <a href="https://whatsa.me/5519993294204/?t=Hi,%20I%20would%20like%20to%20know%20more%20about%20ASA%27s%20services."><span class="emoji">&#128250;</span> <span class="links__item"> Whatsapp </span></a></li>
-            <li> <a href="https://github.com/artciclo"><span class="emoji">&#128250;</span> <span class="links__item"> GitHub </span></a></li>
-            </ul>
+            <!-- Links -->
+            <div class="links">
+                <ul>
+                    <li><a href="files/Arthur_Lima_CV_PT.pdf" download><span class="emoji">&#x1F4C4;</span> Currículo - Português</a></li>
+                    <li><a href="files/Arthur_Lima_CV_EN.pdf" download><span class="emoji">&#x1F4C4;</span> Resume - English</a></li>
+                    <li><a href="https://www.linkedin.com/in/artciclo/" target="_blank"><span class="emoji">&#128188;</span> LinkedIn</a></li>
+                    <li><a href="https://whatsa.me/5519993294204" target="_blank"><span class="emoji">&#x1F4DE;</span> WhatsApp</a></li>
+                    <li><a href="https://github.com/artciclo" target="_blank"><span class="emoji">&#x1F4BE;</span> GitHub</a></li>
+                    <li><a href="mailto:artciclo@gmail.com"><span class="emoji">&#x1F4E7;</span> E-mail</a></li>
+                </ul>
+            </div>
         </div>
-
-        <!--teste de botão de like-->
-        <div class="like-button" role="button" aria-label="Curtir esse conteúdo">Curtir</div>
     </div>
+
+    <!-- JavaScript para troca de idiomas -->
+    <script>
+        function changeLanguage(lang) {
+            const aboutText = document.getElementById('about-text');
+            if (lang === 'en') {
+                aboutText.textContent = "Versatile professional with extensive experience in project management, currently working as a Project Manager in software development. Master's degree in Civil and Environmental Engineering, postgraduate degree in project management and specialization in product management. International experience in Australia, applying best practices and technologies.";
+                 }
+
+            else {
+                aboutText.textContent = "Profissional versátil com ampla experiência em gestão de projetos, atualmente atuando como Project Manager em desenvolvimento de software. Possui mestrado em Engenharia Civil e Ambiental, pós graduação em gerenciamento de projetos e especialização em gerenciamento de produtos. Experiência internacional na Austrália, aplicando melhores práticas e tecnologias.";
+            }
+        }
+    </script>
+    <footer>Website developed by Arthur Lima</footer>
 </body>
+
 </html>

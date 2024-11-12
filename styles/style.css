@@ -1,17 +1,39 @@
-/* iniciando meu primeiro arquivo CSS */
-
+/* Iniciando meu primeiro arquivo CSS */
 body {
-    color: #444;
-    background: rgb(255,245,249);
-    background: linear-gradient(90deg, rgba(255,245,249,1) 0%, rgba(170,203,244,1) 100%);
+    background: rgb(255, 245, 249);
+    background: -moz-linear-gradient(90deg, rgba(255, 245, 249, 1) 0%, rgba(147, 195, 255, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255, 245, 249, 1) 0%, rgba(147, 195, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(255, 245, 249, 1) 0%, rgba(147, 195, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff5f9", endColorstr="#93c3ff", GradientType=1);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
-    width: 650px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
     padding: 16px;
+}
 
+.language-switch {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 .destaque {
@@ -19,49 +41,56 @@ body {
 }
 
 .profile {
-    margin-top: 100px;
+    margin-top: 50px;
+
 }
 
 .profile__header img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     object-fit: cover;
-    border-radius: 100%;
+    border-radius: 50%;
     display: block;
-    margin: 0 auto;
-    margin-bottom: 24px;
-
+    margin: 0 auto 24px auto;
 }
 
 .profile__header h2 {
     font-weight: 400;
-}
-.profile__header h1,  .profile__header h2 {
     margin: 0;
+    text-shadow: 0,5px 0,5px 0,5px black;
+    text-decoration: underline;
+}
 
+.profile__header h1 {
+    margin: 0;
+    text-shadow: 0,5px 0,5px 0,5px black;
+    
 }
 
 .profile__header, .profile__about {
     text-align: center;
 }
 
-div.profile__about {
-    display: grid;
-    grid-row: 50%;
-    justify-content: center;
-    width: 650px;
-    
-    
+.profile__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
 }
 
 .profile__about div {
     margin: auto;
-   
-    
 }
+
 .profile__about p {
-    width: 650px;
-    text-align: justify;
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .profile__about .destaque {
@@ -74,28 +103,27 @@ a.destaque {
 
 .links ul {
     list-style: none;
-    marks: none;
-
+    padding: 0;
 }
 
 .links a {
     display: flex;
     height: 56px;
-    border: solid #444 1px;
+    border: solid #444 2px;
     border-radius: 35px;
     text-decoration: none;
     padding: 0 24px;
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
-
+    transition: all 0.3s ease;
+    background-color: azure;
 }
 
 .links a:hover {
-    border: solid #fff 1px;
-    color: #fff;
-    background-color: aqua;
-
+    border: solid rgb(105, 141, 141) 3px;
+    color: #f6ea96;
+    background-color: rgb(145, 199, 199);
 }
 
 .links__itens {
@@ -103,9 +131,25 @@ a.destaque {
     text-align: center;
 }
 
-@media screen and (max-width: 720px;)
-{
-    .profile__about {
-        font-size: 20px;
+/* Media queries para responsividade */
+@media screen and (max-width: 768px) {
+    .profile {
+        margin-top: 20px;
+    }
+    .profile__about p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile__header img {
+        max-width: 150px;
+    }
+    .profile__about p {
+        font-size: 16px;
+    }
+    .links a {
+        height: 48px;
+        border-radius: 25px;
     }
 }
