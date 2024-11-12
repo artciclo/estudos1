@@ -132,7 +132,7 @@ a.destaque {
 }
 
 .footer {
-    font-size: small;
+    font-size: 10px;
 }
 /* Media queries para responsividade */
 @media screen and (max-width: 768px) {
