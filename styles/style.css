@@ -131,6 +131,9 @@ a.destaque {
     text-align: center;
 }
 
+.footer {
+    font-size: small;
+}
 /* Media queries para responsividade */
 @media screen and (max-width: 768px) {
     .profile {
