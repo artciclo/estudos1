@@ -126,7 +126,7 @@ a.destaque {
 }
 
 .links a:hover {
-    border: solid rgb(105, 141, 141) 3px;
+    border: solid rgb(105, 141, 141) 2px;
     color: #f6ea96;
     background-color: rgb(145, 199, 199);
 }
