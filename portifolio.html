@@ -18,7 +18,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="C:\Users\Arthur\Documents\Fluency Future\style2.css">
     <link rel="stylesheet" href="styles/normalize.css">
 </head>
 
@@ -28,35 +28,36 @@
         <div class="language-switch">
             <button onclick="changeLanguage('en')">English</button>
             <button onclick="changeLanguage('pt')">Português</button>
+            <button onclick = "window.location.href= 'index.html'" >Voltar</button>
         </div>
 
         <!-- Perfil -->
         <div class="profile">
             <div class="profile__header">
-                <img src="images/avatar.jpeg" alt="Arthur Lima" class="profile__image">
+                <img src="images/robo.jpeg" alt="Arthur Lima" class="profile__image">
                 <h1>Arthur Lima</h1>
-                <h2>Project Manager</h2>
+                <h2>Portifólio</h2>
             </div>
 
             <!-- Sobre Mim -->
             <div class="profile__about">
                 <p id="about-text">
-                    Profissional versátil com ampla experiência em gestão de projetos, atualmente atuando como Project Manager em desenvolvimento de software. Possui mestrado em Engenharia Civil e Ambiental, pós graduação em gerenciamento de projetos e especialização em gerenciamento de produtos. Experiência internacional na Austrália, aplicando melhores práticas e tecnologias.
+                    Aqui estão links de alguns projetos que desenvolvi. 
                 </p>
             </div>
 
             <!-- Links -->
             <div class="links">
                 <ul>
-                    <li><a href="files/PT Arthur Lima's CV.pdf" download><span class="emoji">&#x1F4C4;</span> Currículo - Português</a></li>
-                    <li><a href="files/EN Arthur Lima's CV.pdf" download><span class="emoji">&#x1F4C4;</span> Resume - English</a></li>
-                    <li><a href="https://www.linkedin.com/in/artciclo/" target="_blank"><span class="emoji">&#128188;</span> LinkedIn</a></li>
+                    <li><a href="https://artciclo.github.io/geek-calculator/" download><span class="emoji"></span> Geek Calculator</a></li>
+                    <li><a href="https://artciclo.github.io/TEVAP_CALC/" download><span class="emoji"></span> TEVAP Calc (calculadora de materiais) </a></li>
+                   
+                    <!--<li><a href="https://www.linkedin.com/in/artciclo/" target="_blank"><span class="emoji">&#128188;</span> LinkedIn</a></li>
                     <li><a href="https://whatsa.me/5519993294204" target="_blank"><span class="emoji">&#x1F4DE;</span> WhatsApp</a></li>
                     <li><a href="https://github.com/artciclo" target="_blank"><span class="emoji">&#x1F4BE;</span> GitHub</a></li>
                     <li><a href="mailto:artciclo@gmail.com"><span class="emoji">&#x1F4E7;</span> E-mail</a></li>
-                    <li><a href="C:\Users\Arthur\Documents\Fluency Future\portifolio.html"><span class="emoji">&#x1F4E7;</span> Portifólio</a></li>
-
-                    <!--<li><a href=""><span class="emoji">&#x1F4E7;</span> Certificados</a></li>
+                    
+                    <li><a href=""><span class="emoji">&#x1F4E7;</span> Certificados</a></li>
                     <li><a href=""><span class="emoji">&#x1F4E7;</span> Portifólio </a></li>
                     -->
                 </ul>
@@ -69,16 +70,17 @@
         function changeLanguage(lang) {
             const aboutText = document.getElementById('about-text');
             if (lang === 'en') {
-                aboutText.textContent = "Versatile professional with extensive experience in project management, currently working as a Project Manager in software development. Master's degree in Civil and Environmental Engineering, postgraduate degree in project management and specialization in product management. International experience in Australia, applying best practices and technologies.";
+                aboutText.textContent = "Here are links to some projects I've developed.";
                  }
 
             else {
-                aboutText.textContent = "Profissional versátil com ampla experiência em gestão de projetos, atualmente atuando como Project Manager em desenvolvimento de software. Possui mestrado em Engenharia Civil e Ambiental, pós graduação em gerenciamento de projetos e especialização em gerenciamento de produtos. Experiência internacional na Austrália, aplicando melhores práticas e tecnologias.";
+                aboutText.textContent = "Aqui estão links de alguns projetos que desenvolvi.";
             }
         }
     </script>
-    <div class="footer"><footer>Website developed by Arthur Lima</footer>
+    <div class="footer">
+    <footer> <p>Website developed by Arthur Lima</p></footer>
     </div>
-    </body>
+</body>
 
 </html>
