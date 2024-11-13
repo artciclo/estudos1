@@ -63,7 +63,6 @@ button:hover {
     border-radius: 15px;
     align-items: center;
     position: static ;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 0;
