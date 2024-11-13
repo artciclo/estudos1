@@ -7,7 +7,8 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff5f9", endColorstr="#93c3ff", GradientType=1);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-size: cover;
+    
 }
 
 .container {
@@ -61,11 +62,15 @@ button:hover {
     background: radial-gradient(circle, rgba(35, 132, 243, 0.801) 0%, rgba(80, 253, 123, 0.397) 100%);
     border-radius: 15px;
     align-items: center;
-    position: relative ;
-    display: grid;
-    margin: 0 400px;
+    position: static ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 10px 0;
     box-shadow: 5px 5px 5px 5px rgba(34, 192, 195, 0.322);
+    
+
     
 }
 
